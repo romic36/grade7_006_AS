@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.instructions ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.numbered-list, .bulleted-list {
+    flex: 1;
+    min-width: 300px;
+}
+
+.numbered-list ul, .bulleted-list ul {
+    list-style-type: none; /* Removes the bullet points from the main list items */
+    padding-left: 0;
+}
+
+.numbered-list li strong, .bulleted-list li strong {
+    display: block;
+    margin-top: 10px;
+}
+
+.numbered-list li ul li, .bulleted-list li ul li {
+    list-style-type: disc; /* Re-adds bullet points to the nested lists */
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
